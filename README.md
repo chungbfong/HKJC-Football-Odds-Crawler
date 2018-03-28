@@ -3,10 +3,10 @@
   Only for educational use 
 
 # Packages 
-  BeautifulSoup
+- BeautifulSoup
 
 # Working Environment : 
-  Python 2.7
+- Python 2.7
 
 # Standard Output
 /*
