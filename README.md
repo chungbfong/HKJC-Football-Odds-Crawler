@@ -1,6 +1,6 @@
 # HKJC-Web-Scraper
 - basic crawler of bet.hkjc.com/football for live and fixed football odds which should be used for data mining and analysis
-  Only for educational use 
+- Only for educational use 
 
 # Packages 
 - BeautifulSoup
