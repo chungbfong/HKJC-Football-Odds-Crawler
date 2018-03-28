@@ -8,9 +8,7 @@
 # Working Environment : 
 - Python 2.7
 
-# Standard Output
-Standard fixed football match odds printing output:
-
+# Standard Fixed Football Match Odds Output
 
 League Name
 - Australian Division 1
