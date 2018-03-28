@@ -14,17 +14,29 @@ Standard fixed football match odds printing output:
 
 
 Australian Division 1               //League Name
+
 Perth Glory                         //Home Team 
+
 Sydney FC                           //Away Team
+
 matchtime:29/03 18:30               //match time
+
 scrapetime:Thu Mar 29 03:45:55 2018 //scrape time
+
 matchid:124969                      //match id
+
 ('THU', '1')                        //match number
+
 True                                //True = live betting, False = no live betting
+
 T303-TVB myTV SUPER 303             //TV broadcast channel, return None if no tv broadcast channel
+
 ['3.30', '3.60', '1.85']            // Home , Draw , Away
+
 ['1.80', '3.70', '3.30']            // Handicapped Home Draw Away
+
 ['3.75', '2.25', '2.40']            // First Half Home Draw Away
+
 //Asian Handicap 
 [['0/+0.5', '2.12'], ['0/-0.5', '1.73']] 
 
