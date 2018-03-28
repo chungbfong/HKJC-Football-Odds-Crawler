@@ -1,13 +1,14 @@
 # HKJC-Web-Scraper
-# - basic crawler of bet.hkjc.com/football for live and fixed football odds which should be used for data mining and analysis
-# Only for educational use 
+- basic crawler of bet.hkjc.com/football for live and fixed football odds which should be used for data mining and analysis
+  Only for educational use 
 
-# Packages which have to be installed:
-# BeautifulSoup
+# Packages 
+  BeautifulSoup
 
-# Working Environment : Python 2.7
+# Working Environment : 
+  Python 2.7
 
-
+# Standard Output
 /*
 Standard fixed football match odds printing output:
 
