@@ -270,8 +270,8 @@ def scraping_loop():
                     "league": league,
                     "home": home,
                     "away": away,
-                    "matchtime:": int(time.mktime(td.timetuple())),
-                    "int_scrapetime:": int(time.time()),
+                    "matchtime": int(time.mktime(td.timetuple())),
+                    "int_scrapetime": int(time.time()),
                     "matchid": int(a),
                     "matchday": match_day,
                     "matchno": match_no,
@@ -421,7 +421,7 @@ def scraping_loop():
 
 
 def main():
-    schedule.every(15).minutes.do(scraping_loop)
+    schedule.every(6).minutes.do(scraping_loop)
     while True:
         schedule.run_pending()
         time.sleep(1)
