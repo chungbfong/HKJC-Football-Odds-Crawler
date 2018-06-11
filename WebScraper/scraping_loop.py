@@ -270,7 +270,7 @@ def scraping_loop():
                     "league": league,
                     "home": home,
                     "away": away,
-                    "matchtime": int(time.mktime(td.timetuple())),
+                    "matchtime": int(int(time.mktime(td.timetuple()))),
                     "int_scrapetime": int(time.time()),
                     "matchid": int(a),
                     "matchday": match_day,
@@ -300,6 +300,7 @@ def scraping_loop():
                 }
 
                 print(a)
+                print(int(int(time.mktime(td.timetuple()))))
                 print(league)
                 print(home)
                 print(away)
@@ -307,7 +308,7 @@ def scraping_loop():
                 print(league)
                 print(home)
                 print(away)
-                print(int(time.mktime(td.timetuple())))#matchtime
+                print(int(int(time.mktime(td.timetuple())))#matchtime
                 print(int(time.time()))#scrapetime
                 print(a)
                 print("matchid:"+a)
