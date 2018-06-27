@@ -105,6 +105,8 @@ def scraping_loop():
                 hha.append(str(soup.find("span", id=str(a + "_HHA_H")).text))
                 hha.append(str(soup.find('span', id=str(a + '_HHA_D')).text))
                 hha.append(str(soup.find('span', id=str(a + '_HHA_A')).text))
+                #str(soup.find('span', id=str(a+ '_HHA_HG')).find('label', class_='lblGoal').text)
+                #str(soup.find('span', id=str(a + '_HHA_AG')).find('label', class_='lblGoal').text)
 
                 # asian handicap insertion
                 if (soup.find('span', id=str(a + '_HDC_HG'))):
@@ -422,11 +424,14 @@ def scraping_loop():
 
 
 def main():
-    schedule.every(6).minutes.do(scraping_loop)
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
+    try:
+        schedule.every(6).minutes.do(scraping_loop)
+        while True:
+            schedule.run_pending()
+            time.sleep(1)
+    except:
+        main()
+        pass
 if __name__ == "__main__":
     main()
 

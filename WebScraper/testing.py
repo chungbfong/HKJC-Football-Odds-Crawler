@@ -10,21 +10,11 @@ import schedule
 import pprint
 import timeit
 
-connection = MongoClient("ds213209.mlab.com", 13209)
-db = connection["hkjcodds"]
-db.authenticate("chungbhk", "marco121596")
-live_match_time = []
-
 
 def main():
-    for match in db.Match.find({"isLive":True,"matchtime":{"$gt":time.time()}}):
-        a = match["matchtime"]
-        if a not in live_match_time:
-            live_match_time.append(a)
-    print("Live Match Time Incoming:")
-    print(live_match_time)
-    print("")
-
-
+    r = urllib.urlopen("http://bet.hkjc.com/football/odds/odds_allodds.aspx?lang=EN&tmatchid=127438").read()
+    soup = BeautifulSoup(r, 'html.parser')
+    print(str(soup.find('span', id=str("127438"+ '_HHA_HG')).find('label', class_='lblGoal').text))
+    print(str(soup.find('span', id=str("127438" + '_HHA_AG')).find('label', class_='lblGoal').text))
 if __name__ == "__main__":
     main()
